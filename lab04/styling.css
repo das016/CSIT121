@@ -1,0 +1,17 @@
+body {
+    background-image: url("images/chinaflag.jpg");
+    background-repeat: no-repeat;
+    background-position: 10% 5%;
+    background-size: 700px;
+
+}
+
+h1 {
+ color: rgba(255, 25, 0, 0.793); 
+ font-family: fantasy;
+}
+
+p {
+font-size: large;
+}
+
