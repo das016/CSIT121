@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab 02: HTML Basics</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            background-color: lightgray;
+            color:black;
+            font-family: cursive;
+        }
+        
+        a:hover {
+            color: darkviolet;
+        }
+        
+        a:active {
+            color: rgb(20, 220, 133);
+        }
+
+        h2, h3, h4 {
+            color: rgb(22, 91, 137);
+        }
+
+        p {
+            font-style: italic; 
+
+        }
+
+        #introSection {
+            background-color: rgb(147, 203, 203);
+        }
+
+        #blog1Section {
+            background-color: moccasin;
+        }
+
+        #blog2Section {
+            background-color: honeydew;
+        }
+
+        #blog3Section {
+            background-color: beige;
+        }
+
+        div {
+            display: flex;
+            flex-direction: column;
+            padding: 20px
+        }
+
+        div:hover {
+            color: blueviolet;
+        }
+
+        @media (min-width: 1200px) {
+            div {
+                flex-direction: row;
+            }
+        }
+
+        footer {
+            background-color: darksalmon;
+        }
+        
+    </style>
+
+</head>
+<body>
+
+    <header>
+        <ul>
+            <li><a href="#blog1">Reflection on Labs 1 & 2</a></li>
+            <li><a href="#blog2">Reflection on Lab 3</a></li>
+            <li><a href="#blog3">Reflection on Lab 5</a></li>
+        </ul>
+    </header>
+
+    <main>
+        <article>
+            <div id="introSection">
+                <h2 id="mainWebsiteHeader">My Web Standards Journey</h2>
+                <p>
+                    This is my first blog and I would like to share my journey 
+                    from no experience in computers to creating my first
+                    basic web page.  
+                    Hopefully, years from now, I will reflect upon my learning 
+                    adventure and be able to appreciate my improved skills.    
+                </p>
+            </div>
+
+            <div id="blog1Section">
+                <h2 id="blog1">Reflection on Labs 1 & 2</h2>
+                <h3 class="achievements">Exciting Personal Achievements</h3>
+                <ul class="achievements">
+                    <li>I created my first github repository.</li>
+                    <li> published my first webpage using github pages.</li>
+                    <li>I created my first html file.</li>
+                </ul>
+            
+                <h4>Interesting Sections on Bright Space</h4>
+        
+                <ol>
+                    <li><a href="https://ccbcmd.brightspace.com/d2l/lms/dropbox/user/folders_list.d2l?ou=146287&isprv=0">Assignments Page for Web Standards</a></li>
+                    <li><a href="https://ccbcmd.brightspace.com/d2l/le/userprogress/98458/146287/Summary?searchString=&sortField=SortLastName&sortDirection=0">Progress Grades Summary Page for Web Standards</a></li>
+                </ol>
+            </div>
+            
+            <div id="blog2Section">
+                <h2 id="blog2">Reflection on Lab 3</h2>
+                <p>
+                    Since our second lab, I have learned some of the fundamental
+                    ways to style a webpage using Cascading Style Sheets (CSS). I am externally adding
+                    CSS to my html file to make it more visually appealing for my audience. More specifically, I have learned about the
+                    5 categories of CSS selectors. My favorite is the CSS Universal Selector because it allows me to make
+                    changes on all of my webpages.
+                </p>
+            </div>
+
+            <div id="blog3Section">
+                <h2 id="blog3">Reflection on Lab 5</h2>
+                <p>Module 5 has shown me how to properly layout a webpage.</p>
+                <ol>
+                    <li>When laying out a page, it is important to remember that
+                    <li>Make each row visually distinct. The background of rows should not be the same twice in a row (unless it is already
+                    <li>Make each row visually distinct. The background of rows should not be the same twice in a row (unless it is already
+                        visually distinct).</li>
+                    <li>Each row should have vertical padding from 50 to 80 pixels, which makes the layout more readable.</li>
+                </ol>
+            </div> 
+        </article>   
+    </main>
+
+    <footer>
+        <p>Author: Daveed A. Sumpter</p>
+        <p>Date: 12 September 2024</p>
+    </footer>
+
+</body>
+</html>
