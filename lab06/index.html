@@ -1,0 +1,231 @@
+<!--Daveed A. Sumpter CSIT 121 CRN-91559      22 October 2024
+Lab 06: UI/UX Evaluation
+The purpose of this lab is to evaluate the usability of a website
+while applying the concepts of web design best practices.
+The website that I have chosen to evaluate is about a private college
+called McDaniel College, which is located in Westminster, MD.
+https://www.mcdaniel.edu/
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab 06: UI/UX Evaluation</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            background-color: lightgray;
+            color:black;
+            font-family: cursive;
+        }
+        
+        /* a:hover {
+            color: darkviolet;
+        }
+        
+        a:active {
+            color: rgb(20, 220, 133);
+        } */
+
+        .container{
+            display:flex;
+        }
+
+        .item{
+            order: 5px; 
+        }
+
+        .container{
+            flex-direction: row;
+        }
+
+        .container{
+            flex-wrap: wrap
+        }
+
+        .container{
+            flex-flow: column wrap;
+        }
+
+        .container{
+            justify-content: center;
+        }
+
+        .container{
+            align-items:center;
+        }
+
+        .container{
+            align-content: center;
+        }
+
+        
+
+
+        h2, h3, h4 {
+            color: rgb(22, 91, 137);
+        }
+
+        p {
+            font-style: italic;
+            
+
+        }
+
+        introSection {
+            background-color: rgb(147, 203, 203);
+        }
+
+        blog1Section {
+            background-color: moccasin;
+        }
+
+        blog2Section {
+            background-color: honeydew;
+        }
+
+        blog3Section {
+            background-color: beige;
+        }
+
+        div {
+            display: flex;
+            flex-direction: column;
+            padding: 20px
+        }
+
+        /*div:hover {
+            color: blueviolet;
+        }*/
+
+        @media (min-width: 1200px) {
+            div {
+                flex-direction: row;
+            }
+        }
+
+        footer {
+            background-color: darksalmon;
+        }
+        
+    </style>
+
+</head>
+<body>
+
+    <main>
+        <article>
+            <div class="container" id="introSection">
+                <h2 id="mainWebsiteHeader">Lab 06: My First UI/UX Evaluation </h2>
+                <p>
+                    <img src="CCBC Fall 2024/CSIT121 Web Standards/lab06/mcdanielcollegesymbol.jpg"  alt="McDaniel College Symbol"  width="300" height="100">
+
+                    This is my first time evaluating the usability of a website
+                    while applying the concepts of web design best practices.  I have chosen to 
+                    evaluate the domain mcdaniel.edu because it is the college where I graduated from
+                    and I am very curious to find out how user-friendly and accessible it is to the general public.
+                </p>
+            </div>
+
+            <div class="container" id="section1">
+                <h2 id="section1Header">Usability</h2>
+                <p>
+                    In terms of usability, the homepage of McDaniel College is fairly simple and straightforward, which makes it very easy for users to learn the design and accomplish basic tasks the first time they encounter the design.  Once I explored the McDaniel College homepage and I became familiar with the design, I was quite efficient and quick at locating specific pieces of information, such as the requirements of certain majors.  In addition, I believe that the design is memorable because all of the major links are located at the top of the homepage.  When I was looking for the official transcript request form, I realized I had to search for it using the search box at the top of the homepage.  Otherwise, it could be quite challenging and time-consuming to locate it, especially for a first-time user.  Nontheless, my overall satisfaction level with the homepage is quite high because I think it is very user-friendly and it is fairly straightforward in terms of finding important information as a student and as an alumni.
+                </p>
+                <h2 class="auditScoreResultsSection">Audit Score Results According to the Accessibility Checker</h2>
+                <p>
+                    The accessibility checker evaluated the homepage of the domain mcdaniel.edu, and the results stated that the homepage for McDaniel College is not compliant and is currently at risk of accessibility lawsuits due to 2 critical issues.  The audit score
+                    is in fact 73.  Websites with a score lower than 90 are at risk of accessibility lawsuits.  The Web Content Accessibility Guidelines (WCAG) offers detailed global standards to ensure compliance of a webpage for people of various disabilities.  One of the critical issues involves the contrast between foreground and background colors, which currently does not meet WCAG 2 AA minimum contrast ratio thresholds.  The failing element is the selector: div.slab > div.slab__wrapper > div.field > a.
+                </p>
+                <p>
+                    Personally, by looking at Mcdaniel College's homepage, I cannot notice the contrast problem immediately, but if you hover over some of the links at the top of the homepage, a bright yellow box will appear for each link, which can be a bit disturbing to the eyes, especially for someone who has a medical condition.
+                </p>
+            
+                <h2>CRAP Criteria: Contrast, Repetition, Alignment, & Proximity</h2>
+                      <p> On the McDaniel College Home Page, I can see various colors on the layout, including: green, white, black, yellow.  These colors are repeated throughout the homepage as you scroll down. Perhaps, the hover element with respect to the links at the top of the homepage is what causes a problem in terms of contrast due to the bright yellow color that appears when you hover over each of the six links.  All of the buttons to the links have a hover component and an underline component.  In terms of alignment, all of the headings, photographs, paragraphs, and links are perfectly aligned in columns and rows due to the Flexbox property.  Finally, in terms of proximity, related information on the homepage is grouped together based on the content which is organized into specific headings to guide the viewer in a logical manner. Overall, this homepage uses hierarchical organization because it includes navigational links to major site sections.  It seems to follow the "Three Click Rule."</p>
+                <ol>
+                    <li><a href="https://www.mcdaniel.edu/">Home Page for McDaniel College</a></li>
+                    <li><a href="https://www.mcdaniel.edu/athletics">Athletics Page for McDaniel College</a></li>
+                </ol>
+            </div>
+            <div class="container" id="section2">
+                <h2 id="section2Header"> What is the URL of the website?</h2>
+                <a href=https://www.mcdaniel.edu/ class="websiteDomainName">https://www.mcdaniel.edu/</a></h2>
+            </div>
+            
+            <div class="container" id="section3">
+                <h2 id="section3Header">What is the name of the website?</h2>
+                <p>
+                    The name of the website is McDaniel College homepage.
+                </p>
+            </div>
+
+            <div class="container" id="section4">
+                <h2 id="section4Header">Who is the site's target audience?</h2>
+                <p>
+                 The target audience of McDaniel College's webpage is: 
+
+                 <ul>
+                           <li>
+                             future college students
+                           </li>
+                           <li>
+                             transfer students from other higher education institutions, such as community colleges.
+                           </li>
+                </ul>
+                </p>
+                
+            </div> 
+
+            <div class="container" id="section5">
+                 <h2 id="section5Header">How is the site organized?</h2>
+                 <p>The McDaniel College homepage has a hierarchical organization because it is clearly defined with navigation links to major site sections located horizontally across the top of the page. I also tested the "Three Click Rule" by clicking on the links at the top of the page, and I was able to access the requirements of a specific major using 3 clicks from the homepage.</p>
+            </div>
+            
+            <div class="container" id="section6">
+                <h2 id="section6Header">Which CRAP Design Principle does McDaniel College webpage use? Provide at least one example.</h2>
+                <p> In terms of contrast, McDaniel College homepage utilizes dark colors against light colors. In terms of repetition, the homepage also repeats font-styles for headings, link styles are uniform throughout, and all pictures are aligned appropriately. In terms of alignment, each major heading is center-aligned and positioned above of the paragraph that it represents.  In addition, photographs are aligned either to the right or left of each major heading and paragraph.</p>
+            </div>
+
+            <div class="container" id="section7">
+                <h2 id="section7Header">What is the Audit Score according to the Accessibility Checker?</h2>
+                <p> After applying the Accessibility Checker, the Audit Score is 73. Any website with an Audit Score lower than 90 is at risk of accessibility lawsuits. In addition, there is an issue with the contrast between foreground and background colors related to the selector: div.slab > div.slab__wrapper > div.field > a</p>
+            </div>
+            
+            <div class="container" id="section8">
+                <h2 id="section8Header">What is the site's effectiveness? Does it support users in completing actions accurately?</h2>
+                <p> In terms of effectiveness, I believe that the McDaniel College homepage supports users in completing actions accurately because major links are at the top of the webpage, which provides easy accessibility to the most important information, such as: Academics, Admissions & Cost, Student Life, Athletics, About Us, and Alumni.  These aforementioned hyperlinks contain thoughtfully chosen text and keywords to describe specific information that they will lead to.  Overall, this organization of the hyperlinks facilitates the task of finding specific information about the college for the user, especially for potential students and alumni.</p>
+            </div>
+
+            <div class="container" id="section9">
+                <h2 id="section9Header">What is the site's efficiency? Can users perform tasks quickly?</h2>
+                <p> In terms of the overall efficiency of McDaniel College's homepage, I believe that once users have become familiar with the design, they can perform tasks quite quickly. For example, I am an alumni of McDaniel College and I was able to locate the online form for requesting official transcripts in less than 5 seconds by searching for it in the search box, which is located at the very top right of the homepage.</p>
+            </div>
+
+            <div class="container" id="section10">
+                <h2 id="section10Header">How is the engagement? Is it pleasant to use and appropriate for its industry/topic?</h2>
+                <p> In terms of the overall engagement, I do believe that McDaniel College's homepage is very welcoming and it provides prospective students with a taste of what it would look like if they attended the college through displaying videos of the campus and common social activities. I had a great time evaluating their homepage because the pictures and videos reminded me of good times spent on campus while I attended during my undergraduate degree. Navigating through their site was a very pleasant experience because it is very user-friendly in terms of being very easy to locate important information, such as how to request official transcripts.  In terms of appropriateness in relation to the private higher education industry, I believe that McDaniel College's homepage offers very valuable and consistent information for potential students, current students, and alumni.  The information displayed on McDaniel College's homepage is very similar to what you may find on another university's homepage.  McDaniel College's home page incorporates a hierarchical organization because it is clearly defined at the top with navigational links to major site sections. In fact, I tested out the Three Click Rule to see if I could get to the Kinesiology Program Requirements by clicking on a maximum of 3 hyperlinks, and it turned out to be true in this case.  </p>
+            </div>
+
+            <div class="container" id="section11">
+                <h2 id="section11Header">Make at least one recommendation to improve this website based on what you learned in Module # 6.</h2>
+                <p> One simple recommendation based on the content that I learned in Module # 6 to improve McDaniel College's homepage would be to improve the contrast between foreground and background colors within the failing element of the selector: div.slab > div.slab__wrapper > div.field > a. Although my untrained eye does not notice a major contrast problem, the Accessibility Checker definitely identified it as a major issue. </p>
+            </div>
+
+            <div class="container" id="section12">
+                <h2 id="section12Header">Final Throughts on Lab 06: UI/UX Evaluation</h2>
+                <p> Overall, Module 6 has shown me how to properly analyze a user interface design by focusing on visual elements that directly engage users.  It has also made me consider the manner in which users interact with interface elements, such as buttons or sliders.  It's important for a webpage to be easy to navigate and it should be consistent across all pages.  Most importantly, the user interface should be accessible to users of all abilities. </p>
+                <p>Although the layout of a web page is very important, the user experience is critical, especially for university websites whose main goals should be to enhance accessibility of specific information to a variety of potential students and to maximize user experience by: serving as a purposeful resource (utility), accommodating the users' needs (usability), presenting information in a desirable way to attract as many potential students as possible, and advertising/promoting their educational brand in order to maximize profits by enrolling as many academically talented students as possible.</p>
+            </div>
+        </article>   
+    </main>
+
+    <footer>
+        <p>Author: Daveed A. Sumpter</p>
+        <p>Date: 24 October 2024</p>
+    </footer>
+
+</body>
+</html>
