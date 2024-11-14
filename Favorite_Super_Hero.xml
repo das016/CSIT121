@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>   <!--This is  prolog that defines the XML version and it ensures compatibility.-->
+<!--Below is an XML file that describes my favorite superhero, including at least five elements.  
+I chose to organize the information below in a logical manner that summarizes the relevant key facts about Peter Parker, including: 
+physical characteristics, origin of superpowers, romantic partner, best friend, role model, and infamous enemies.-->
+
+<favorite_superhero>  
+    <birth_name>Peter Parker</birth_name>
+    <origin_powers>He was bit by a radioactive spider</origin_powers>
+    <most_famous_superpower>Spider/Spidey-Sense enables him to detect danger before it happens</most_famous_superpower>
+    <age_onset_abilities>15 years old</age_onset_abilities>
+    <greatest_superpower>Sense of Responsibility</greatest_superpower>
+    <greatest_weakness>His achilles' heel is his compassion</greatest_weakness>
+    <neighborhood>Forrest Hills</neighborhood>
+    <borough>Queens</borough>
+    <city>New York City</city>
+    <height>5'10</height>
+    <race>Caucasian</race>
+    <gender>Male</gender>
+    <romantic_partner>Mary Jane Watson</romantic_partner>
+    <best_friend>Harry Osborn</best_friend>
+    <role_model>Uncle Ben</role_model>
+    <arch_enemies>Norman Osborn (Green Goblin) and Venom</arch_enemies>
+</favorite_superhero>
