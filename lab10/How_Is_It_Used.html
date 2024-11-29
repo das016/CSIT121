@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab 10 - How Is It Used?</title>
+    <link rel="stylesheet" href="styling.css">
+</head>
+<body>
+    <div class="background-container">
+        <!-- The overlay -->
+        <div id="myNav" class="overlay">
+
+            <!-- Button to close the overlay navigation -->
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        
+            <!-- Overlay content -->
+            <nav class="overlay-content">
+                <a href="index.html">Home Page</a>
+                <a href="What_Is_It.html" target="_blank">What is it?</a>
+                <a href="Why_Is_It_Important.html" target="_blank">Relevance</a>
+                <a href="How_Is_It_Used.html" target="_blank">How is it used?</a>
+                <a href="Sources.html" target="_blank">References</a>
+            </nav>
+        </div>
+        
+        <!-- Use any element to open/show the overlay navigation menu -->
+        <span role="button" onclick="openNav()">&#9776; MENU</span>
+        <!-- End overlay -->
+        
+        <div class="content-container">
+            <h1>Accessible Rich Internet Applications (WAI-ARIA) 1.2</h1>
+            <img src="AccessibilityImage.png"  alt="This is a picture of a computer with symbols that represent a variety of disabilities">
+            <h2>How Is It Used?</h2>
+            <p>
+
+                Accessible Rich Internet Applications can be used to make the web content provided by an author more accessible in terms of primarily HTML by allowing the user to interact with different html elements so that they can access the information that they need.
+                By normalizing the accommodation of a full keyboard in HTML, users should be able to access and fully understand specific web content through their assistive technology device. People with disabilities have the right to be able to navigate a webpage simply through the use of a keyboard (Nurthen, Cooper, & Henry, 2006). Through the use of the global aria-keyshortcuts attribute, users can provide commands via a keyboard that would traditionally require an individual to interact with a menu or use a mouse. In addition, the aria-keyshortcuts attribute allows assistive technologies to become aware of the shortcut so that they can communicate this fact to users. The aria-keyshortcuts attribute must be added through JavaScript event handlers. This way, when a user interacts or clicks on a specific element on a webpage, it should communicate to the user that there is a keyboard shortcut, which is also known as a "hot Key," and it should give the user access to a shortcut cheat sheet page, which will make it easier for the user to navigate the web page when using the main menu. An example of a valid keyboard shortcut is: 
+                aria-keyshortcuts="Control+Alt+." 
+                This keyboard shortcut incorporates the use of modifier keys (the control button, the alternate button, and the plus button), which do not have any significant effect when used on their own (Nurthen, Cooper, & Henry, 2006).
+            </p>
+
+            <p>
+                Accessible Rich Internet Applications specifies semantics or the meaning of the content, which can be applied to specific elements that can then be separated into roles, states, and properties (developer.mozilla.org). Roles are used to specify a type of element in the user interface. For example, the button role is used to inform a screen reader that the the HTML element is a button. The web developer must include the html code role="button" so that the screen reader can appropriately communicate to the user that he or she is interacting with a button on the web page. Nonetheless, the button will not be functional unless the developer incorporates appropriate CSS and JavaScript that adds button appearance and functionality. ARIA states and properties are used to support roles, which are assigned to specific HTML elements.  This allows extra information to be available to the accessibility application programming interface (API)(developer.mozilla.org).
+            </p>
+
+            <p> 
+                In a web page, a developer can incorporate the ARIA: checkbox role to inform the user of the state of a checkbox, which can be either "checked," "partially checked," or "not checked." The aria-checked attribute will indicate either true if the button is actually checked or false if the button is indeed not checked. The aria-checked attribute should change based on if a checkbox is clicked on or not by a user and this information should be communicated to the user. The checkbox should be interactive and keyboard accessible. Through JavaScript, the developer can incorporate an event handler to make it obvious to the user by modifying the CSS or HTML element that a checkbox has been clicked on. 
+                An example of an accessible checkbox would include code similar to the following:
+                <pre><code>&lt;div role="checkbox" aria-checked="false">custom checkbox&lt;/div></code></pre>
+
+                The above example shows the user that the purpose of the html element is to be used as a checkbox and the current state of the checkbox is "false," which indicates to the user that it has not been clicked on.  In addition, the above code informs the user that the checkbox is custom-made.
+            </p>
+        </div>  
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

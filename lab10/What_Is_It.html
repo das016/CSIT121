@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab 10 - What Is It?</title>
+    <link rel="stylesheet" href="styling.css">
+</head>
+<body>
+    <div class="background-container">
+        <!-- The overlay -->
+        <div id="myNav" class="overlay">
+
+            <!-- Button to close the overlay navigation -->
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        
+            <!-- Overlay content -->
+            <nav class="overlay-content">
+                <a href="index.html">Home Page</a>
+                <a href="What_Is_It.html" target="_blank">What is it?</a>
+                <a href="Why_Is_It_Important.html" target="_blank">Relevance</a>
+                <a href="How_Is_It_Used.html" target="_blank">How is it used?</a>
+                <a href="Sources.html" target="_blank">References</a>
+            </nav>
+        </div>
+        
+        <!-- Use any element to open/show the overlay navigation menu -->
+        <span role="button" onclick="openNav()">&#9776; MENU</span>
+        <!-- End overlay -->
+        
+        <div class="content-container">
+            <h1>Accessible Rich Internet Applications (WAI-ARIA) 1.2</h1>
+            <img src="AccessibilityImage.png"  alt="This is a picture of a computer with symbols that represent a variety of disabilities">
+            <h2>What Is It?</h2>
+            <p>
+                Accessible Rich Internet Applications suite of web standards (WAI-ARIA) 1.2 provides a framework or a template for developers to improve content on the web and applications by making them more accessible and operable for individuals with disabilities (Nurthen, Cooper, & Henry, 2006).  This is done by providing developers with specific markup techniques in the form of roles, states, and properties, which allows the assistive technologies to more effectively process the web content in order to then convey the meaning of the content and how the user is expected to interact with that specific piece of content (Nurthen, Cooper, & Henry, 2006).
+            </p>
+
+            <p>
+                In fact, the world's population is increasingly getting older and the average number of older people accessing the internet globally is increasing. Unfortunately, with advanced age comes age-related physical impairments, such as visual, auditory, and other physical problems, that can greatly interfere with an older user's ability to easily access important web information, such as online bank accounts. Therefore, web developers should be very conscientious about their target users and should aim to simplify their technologies as much as possible to ensure a positive user experience by focusing on usability for a diverse range of ages as well as for special populations, including older adults and people with specific needs (Nurthen, Cooper, & Henry, 2006). The Rich Internet Application Accessibility's main objective is to effectively convey its goal of providing an understanding of the requirements for accessible rich internet applications to those people who are in charge of developing new web technologies so that the web can be accessible to everyone regardless of their skill level or health.
+            </p>
+
+            <p>
+                The web standard 'Accessible Rich Internet Applications (WAI-ARIA) 1.2' is specifically designed to target web developers, framework/library developers, assistive technology developers, and Information and Communication Technology (ICT) departments. These professionals are primarily responsible for creating web technologies. Therefore, it is crucial for them to understand the concept of accessibility and important ways in which they can positively impact the development of rich internet applications in terms of maximizing the accessibility to people with a diverse range of disabilities. Many website owners have the wonderful opportunity to improve existing websites by ensuring that they maintain the accessibility of their website over time (Nurthen, Cooper, & Henry, 2006). 
+            </p>
+        </div>  
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
