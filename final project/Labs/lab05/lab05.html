@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab 05: HTML Layout</title>
+    <link rel="stylesheet" href="../../styling.css">
+    <style>
+        .lab05_link:hover {
+            color: darkviolet;
+        }
+        
+        .lab05_link:active {
+            color: rgb(20, 220, 133);
+        }
+
+        h2, h3, h4 {
+            color: rgb(22, 91, 137);
+        }
+
+        p {
+            font-style: italic; 
+        }
+
+        #introSection {
+            background-color: rgb(147, 203, 203);
+        }
+
+        #blog1Section {
+            background-color: moccasin;
+        }
+
+        #blog2Section {
+            background-color: honeydew;
+        }
+
+        #blog3Section {
+            background-color: beige;
+        }
+
+        .lab05_div {
+            display: flex;
+            flex-direction: column;
+            padding: 20px
+        }
+
+        .lab05_div:hover {
+            color: blueviolet;
+        }
+
+        @media (min-width: 1200px) {
+            .lab05_div {
+                flex-direction: row;
+            }
+        }
+
+        footer {
+            background-color: darksalmon;
+        }
+    </style>
+
+</head>
+<body>
+    <!-- The overlay -->
+    <div id="myNav" class="overlay">
+
+        <!-- Button to close the overlay navigation -->
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    
+        <!-- Overlay content -->
+        <nav class="overlay-content">
+            <a href="../../index.html">Daveed's Final Project Portfolio</a>
+            <a href="../../Final_Project_Reflection_Page.html" target="_blank">Final Project Reflection</a>
+            <a href="../../Web_Standards_Personal_Reflection.html" target="_blank">Web Standards Personal Reflection</a>
+            <a href="../../Labs_Overview.html" target="_blank">Labs Overview</a>
+            <a href="../lab01/aboutme.html" target="_blank">Lab01</a>
+            <a href="../lab02/lab02.html" target="_blank">Lab02</a>
+            <a href="../lab03/lab03.html" target="_blank">Lab03</a>
+            <a href="../lab04/lab04.html" target="_blank">Lab04</a>
+            <a href="../lab05/lab05.html" target="_blank">Lab05</a>
+            <a href="../lab06/lab06.html" target="_blank">Lab06</a>
+            <a href="../lab07/tierlist.html" target="_blank">Lab07</a>
+            <a href="../lab08/lab08.html" target="_blank">Lab08</a>
+            <a href="../lab09/lab09.html" target="_blank">Lab09</a>
+            <a href="../lab10/lab10.html" target="_blank">Lab10</a>
+        </nav>
+    </div>
+    
+    <!-- Use any element to open/show the overlay navigation menu -->
+    <span role="button" onclick="openNav()">&#9776; MENU</span>
+    <!-- End overlay -->
+
+    <header>
+        <ul>
+            <li><a class="lab05_link" href="#blog1">Reflection on Labs 1 & 2</a></li>
+            <li><a class="lab05_link" href="#blog2">Reflection on Lab 3</a></li>
+            <li><a class="lab05_link" href="#blog3">Reflection on Lab 5</a></li>
+        </ul>
+    </header>
+
+    <main>
+        <article>
+            <div class="lab05_div" id="introSection">
+                <h2 id="mainWebsiteHeader">My Web Standards Journey</h2>
+                <p>
+                    This is my first blog and I would like to share my journey 
+                    from no experience in computers to creating my first
+                    basic web page.  
+                    Hopefully, years from now, I will reflect upon my learning 
+                    adventure and be able to appreciate my improved skills.    
+                </p>
+            </div>
+
+            <div class="lab05_div" id="blog1Section">
+                <h2 id="blog1">Reflection on Labs 1 & 2</h2>
+                <h3 class="achievements">Exciting Personal Achievements</h3>
+                <ul class="achievements">
+                    <li>I created my first github repository.</li>
+                    <li> published my first webpage using github pages.</li>
+                    <li>I created my first html file.</li>
+                </ul>
+            
+                <h4>Interesting Sections on Bright Space</h4>
+        
+                <ol>
+                    <li><a href="https://ccbcmd.brightspace.com/d2l/lms/dropbox/user/folders_list.d2l?ou=146287&isprv=0">Assignments Page for Web Standards</a></li>
+                    <li><a href="https://ccbcmd.brightspace.com/d2l/le/userprogress/98458/146287/Summary?searchString=&sortField=SortLastName&sortDirection=0">Progress Grades Summary Page for Web Standards</a></li>
+                </ol>
+            </div>
+            
+            <div class="lab05_div" id="blog2Section">
+                <h2 id="blog2">Reflection on Lab 3</h2>
+                <p>
+                    Since our second lab, I have learned some of the fundamental
+                    ways to style a webpage using Cascading Style Sheets (CSS). I am externally adding
+                    CSS to my html file to make it more visually appealing for my audience. More specifically, I have learned about the
+                    5 categories of CSS selectors. My favorite is the CSS Universal Selector because it allows me to make
+                    changes on all of my webpages.
+                </p>
+            </div>
+
+            <div class="lab05_div" id="blog3Section">
+                <h2 id="blog3">Reflection on Lab 5</h2>
+                <p>Module 5 has shown me how to properly layout a webpage based on the best design practices.</p>
+                <ol>
+                    <li>When laying out a page, it is important to remember that
+                    <li>Make each row visually distinct. The background of rows should not be the same twice in a row (unless it is already
+                    <li>Make each row visually distinct. The background of rows should not be the same twice in a row (unless it is already
+                        visually distinct).</li>
+                    <li>Each row should have vertical padding from 50 to 80 pixels, which makes the layout more readable.</li>
+                </ol>
+            </div> 
+        </article>   
+    </main>
+
+    <footer>
+        <p>Author: Daveed A. Sumpter</p>
+        <p>Date: 12 September 2024</p>
+    </footer>
+
+    <script src="../../script.js"></script>
+</body>
+</html>

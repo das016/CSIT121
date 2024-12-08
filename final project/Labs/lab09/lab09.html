@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+
+<head>
+    <title>Reads the XML data using JavaScript</title>
+    <link rel="stylesheet" href="../../styling.css">
+
+    <!-- CSS -->
+    <style>
+        table {
+            border-collapse: collapse;
+            width: 100%;
+        }
+
+        th,
+        td {
+            text-align: left;
+            padding: 8px;
+        }
+
+        tr:nth-child(even) {
+            background-color: #7ce2af
+        }
+
+        th {
+            background-color: #7c0f65;
+            color: white;
+        }
+
+        .button {
+            position: relative;
+            text-align: center;
+            padding: 20px;
+            border: 4px solid rgb(55, 12, 211);
+            background: rgba(20, 192, 4, 0.5);
+            color: rgb(230, 36, 78);
+            outline: none;
+            border-radius: 30px;
+            font-size: 30px;
+            width: 500px;
+
+        }
+
+        .button:hover {
+            color: black;
+            background: white;
+        }
+    </style>
+
+    <!--JavaScript-->
+    <script>
+        function loadXMLDoc() {
+            let xmlhttp = new XMLHttpRequest();
+            xmlhttp.onreadystatechange = function () {
+
+                // Request finished and response 
+                // is ready and Status is "OK"
+                if (this.readyState == 4 && this.status == 200) {
+                    empDetails(this);
+                }
+            };
+
+            // employee.xml is the external xml file
+            xmlhttp.open("GET", "employee.xml", true);
+            xmlhttp.send();
+        }
+
+        function empDetails(xml) {
+            let i;
+            let xmlDoc = xml.responseXML;
+            let table =
+                `<tr><th>Firstname</th><th>Lastname</th>
+                    <th>Title</th><th>Division</th>
+                    <th>Building</th><th>Room</th>
+                </tr>`;
+            let x = xmlDoc.getElementsByTagName("employee");
+
+            // Start to fetch the data by using TagName 
+            for (i = 0; i < x.length; i++) {
+                table += "<tr><td>" +
+                    x[i].getElementsByTagName("firstname")[0]
+                        .childNodes[0].nodeValue + "</td><td>" +
+                    x[i].getElementsByTagName("lastname")[0]
+                        .childNodes[0].nodeValue + "</td><td>" +
+                    x[i].getElementsByTagName("title")[0]
+                        .childNodes[0].nodeValue + "</td><td>" +
+                    x[i].getElementsByTagName("division")[0]
+                        .childNodes[0].nodeValue + "</td><td>" +
+                    x[i].getElementsByTagName("building")[0]
+                        .childNodes[0].nodeValue + "</td><td>" +
+                    x[i].getElementsByTagName("room")[0]
+                        .childNodes[0].nodeValue + "</td></tr>";
+            }
+
+            // Print the xml data in table form
+            document.getElementById("id").innerHTML = table;
+        }
+    </script>
+</head>
+
+<body>
+    <!-- The overlay -->
+    <div id="myNav" class="overlay">
+
+        <!-- Button to close the overlay navigation -->
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    
+        <!-- Overlay content -->
+        <div class="overlay-content">
+            <a href="../../index.html">Daveed's Final Project Portfolio</a>
+            <a href="../../Final_Project_Reflection_Page.html" target="_blank">Final Project Reflection</a>
+            <a href="../../Web_Standards_Personal_Reflection.html" target="_blank">Web Standards Personal Reflection</a>
+            <a href="../../Labs_Overview.html" target="_blank">Labs Overview</a>
+            <a href="../lab01/aboutme.html" target="_blank">Lab01</a>
+            <a href="../lab02/lab02.html" target="_blank">Lab02</a>
+            <a href="../lab03/lab03.html" target="_blank">Lab03</a>
+            <a href="../lab04/lab04.html" target="_blank">Lab04</a>
+            <a href="../lab05/lab05.html" target="_blank">Lab05</a>
+            <a href="../lab06/lab06.html" target="_blank">Lab06</a>
+            <a href="../lab07/tierlist.html" target="_blank">Lab07</a>
+            <a href="../lab08/lab08.html" target="_blank">Lab08</a>
+            <a href="../lab09/lab09.html" target="_blank">Lab09</a>
+            <a href="../lab10/lab10.html" target="_blank">Lab10</a>
+        </div>
+
+    </div>
+    
+    <!-- Use any element to open/show the overlay navigation menu -->
+    <span onclick="openNav()">&#9776; menu</span>
+
+    <center>
+        <button type="button" class="button" onclick="loadXMLDoc()">
+            Get Employees Details
+        </button>
+    </center>
+
+    <br><br>
+    <table id="id"></table>
+
+    <script src="../../script.js"></script>
+</body>
+
+</html>

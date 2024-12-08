@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../../styling.css">
+    <style>
+        nav {
+            margin: 30px 0;
+        }
+
+        a {
+            font-size: 1.2em;
+        }
+
+        table {
+            width: 100%;
+            border: 2px solid black;
+            border-collapse: collapse;
+        }
+
+        th {
+            background-color: rgb(207, 207, 207);
+        }
+
+        th, td {
+            border: 1px solid black;
+            padding: 5px;
+            font-size: 1.2em;
+        }
+
+        #s_Tier {
+            background-color: lightcoral;
+        }
+
+        #a_Tier {
+            background-color: lightsalmon;
+        }
+
+        #b_Tier {
+            background-color: rgb(250, 216, 122);
+        }
+
+        #c_Tier {
+            background-color: khaki;
+        }
+
+        #d_Tier {
+            background-color: lightgreen;
+        }
+
+        #goku {
+            width: 400px;
+        }
+    </style>
+</head>
+<body>
+    <!-- The overlay -->
+    <div id="myNav" class="overlay">
+
+        <!-- Button to close the overlay navigation -->
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    
+        <!-- Overlay content -->
+        <nav class="overlay-content">
+            <a href="../../index.html">Daveed's Final Project Portfolio</a>
+            <a href="../../Final_Project_Reflection_Page.html" target="_blank">Final Project Reflection</a>
+            <a href="../../Web_Standards_Personal_Reflection.html" target="_blank">Web Standards Personal Reflection</a>
+            <a href="../../Labs_Overview.html" target="_blank">Labs Overview</a>
+            <a href="../lab01/aboutme.html" target="_blank">Lab01</a>
+            <a href="../lab02/lab02.html" target="_blank">Lab02</a>
+            <a href="../lab03/lab03.html" target="_blank">Lab03</a>
+            <a href="../lab04/lab04.html" target="_blank">Lab04</a>
+            <a href="../lab05/lab05.html" target="_blank">Lab05</a>
+            <a href="../lab06/lab06.html" target="_blank">Lab06</a>
+            <a href="../lab07/tierlist.html" target="_blank">Lab07</a>
+            <a href="../lab08/lab08.html" target="_blank">Lab08</a>
+            <a href="../lab09/lab09.html" target="_blank">Lab09</a>
+            <a href="../lab10/lab10.html" target="_blank">Lab10</a>
+        </nav>
+    </div>
+    
+    <!-- Use any element to open/show the overlay navigation menu -->
+    <span role="button" onclick="openNav()">&#9776; MENU</span>
+    <!-- End overlay -->
+
+    <nav>
+        <a href="contact.html">Link to Contact page</a>
+    </nav>
+
+    <h1>The Strongest Good Guys in Dragon Ball Z</h1>
+    <table>
+        <thead>
+            <tr>
+                <th scope="col">Tier</th>
+                <th scope="col">Good Guy 1</th>
+                <th scope="col">Good Guy 2</th>
+                <th scope="col">Good Guy 3</th>
+                <th scope="col">Good Guy 4</th>
+                <th scope="col">Good Guy 5</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr id="s_Tier">
+                <td>S</td>
+                <td><img id="goku" src="goku.jpg" alt="This is a photo of Goku"></td>
+                <td><img id="vegeta" src="vegeta.jpg" alt="This is a photo of Vegeta"></td>
+                <td><img id="gohan" src="gohan.jpg"  alt="This is a photo of Gohan"></td>
+                <td><img id="uub" src="uub.jpg" alt="This is a photo of Uub"></td>
+                <td></td>
+            </tr>
+            <tr id="a_Tier">
+                <td>A</td>
+                <td><img id="trunks" src="trunks.jpg"  alt="This is a photo of Trunks"></td>
+                <td><img id="android18" src="android18.jpg" alt="This is a photo of Android 18"></td>
+                <td><img id="goten" src="goten.jpg"  alt="This is a photo of Goten"></td>
+                <td><img id="piccolo" src="piccolo.jpg" alt="This is a photo of Piccolo"></td>
+                <td><img id="android16" src="android16.png" alt="This is a photo of Android 16"></td>
+                <td></td>
+            </tr>
+            <tr id="b_Tier">
+                <td>B</td>
+                <td><img id="Pikkon" src="pikkon.jpg" alt="This is a photo of Pikkon"></td>
+                <td><img id="Krillin" src="krillin.jpg" alt="This is a photo of Krillin"></td>
+                <td><img id="Yamcha" src="yamcha.jpg" alt="This is a photo of Yamcha"></td>
+                <td><img id="Tien" src="tien.jpg" alt="This is a photo of Tien"></td>
+                <td><img id="King Kai" src="kingkai.jpg" alt="This is a photo of King Kai"></td>
+                
+            </tr>
+            <tr id="c_Tier">
+                <td>C</td>
+                <td><img id="Roshi" src="roshi.jpg" alt="This is a photo of Master Roshi"></td>
+                <td><img id="Kami" src="kami.jpg" alt="This is a photo of the Guardian of Earth, Kami"></td>
+                <td><img id="Yajirobe" src="yajirobe.jpg" alt="This is a photo of Yajirobe"></td>
+                <td><img id="Videl" src="videl.jpg" alt="This is a photo of Videl"></td>
+                <td><img id="Chiaotzu" src="chiaotzu.jpg" alt="This is a photo of Chiaotzu"></td>
+                
+            </tr>
+            <tr id="d_Tier">
+                <td>D</td>
+                <td><img id="Korin" src="korin.jpg" alt="This is a photo of Korin"></td>
+                <td><img id="Hercule" src="hercule.jpg" alt="This is a photo of Hercule"></td>
+                <td><img id="Chi-Chi" src="chichi.jpg" alt="This is a photo of ChiChi"></td>
+                <td><img id="Bulma" src="bulma.jpg" alt="This is a photo of Bulma"></td>
+                <td></td>
+            </tr>
+        </tbody>
+    </table>
+    <h1>Reflection on Lab 7</h1>
+    <p>
+        Lab 07: Table and Form Lab has introduced me to making basic tables and forms. I have learned how to make a tier-list style page structured with an HTML table.  In my webpage, I wanted to focus on an HTML table that displayed some of the strongest good guys in the anime "Dragon Ball Z." Overall, I tried to make my table and form accessible in terms of font-styles, font-sizes, and background colors. I also included the alternate attribute to describe my photos in case they do not display to the user.  As a major resource to complete this project, I used the book: Teach Yourself Visually HTML and CSS 2nd Edition written by Guy Hart-Davis.  Chapter 11 in this book was all about creating forms. I learned how to create a form by using the opening form tag and the closing form tag.  In addition, I learned how to create and add Radio Buttons, check boxes, drop down list of options, and command buttons to a form. 
+    </p> 
+    
+    <script src="../../script.js"></script>
+</body>
+</html>
